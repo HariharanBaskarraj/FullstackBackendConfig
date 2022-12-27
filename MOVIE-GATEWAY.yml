@@ -13,4 +13,4 @@ spring:
        - id: movieService
          uri: lb://MOVIE-SERVICE
          predicates:
-          - Path=/movie/**
+          - Path=/movieapp/**
