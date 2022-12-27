@@ -1,0 +1,16 @@
+server:
+  port: 9000
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761
+ 
+spring:
+  cloud:
+    gateway:
+      routes:
+       - id: movieService
+         uri: lb://MOVIE-SERVICE
+         predicates:
+          - Path=/movie/**
