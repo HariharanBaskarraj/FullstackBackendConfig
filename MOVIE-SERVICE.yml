@@ -9,3 +9,6 @@ spring:
 
 database:
   host: remote:localhost
+  dbname: MovieDB
+  username: root
+  passwoord: root
